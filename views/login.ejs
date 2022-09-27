@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .para1 {
+            padding: 20px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container-left {
+            text-align: center;
+            color: rgb(30, 8, 107);
+            width: 60vw;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .container-right {
+            text-align: center;
+            width: 30vw;
+            height: 100vh;
+            background-color: rgb(30, 8, 107);
+            color: white;
+            position: absolute;
+            right: 0px;
+            padding-top: 20vw;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .form-i {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .btn{
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        img{
+            padding: 50px;
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-left">
+            <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut atque repudiandae explicabo
+                enim deleniti
+                excepturi obcaecati voluptate ut nam rem blanditiis, sed odio esse et molestiae temporibus maiores quia
+                cumque ipsa nostrum exercitationem repellendus laboriosam aliquid reiciendis. Eos dicta quisquam quia
+                doloremque molestias, similique, aliquam ullam consequatur suscipit corporis placeat.
+            </p>
+            <img src="/image/intro.png" alt="Hostel Picture" srcset="">
+            <p class="para1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fugit beatae alias quam, eligendi nemo corporis? Quasi velit vel tempore veritatis provident, asperiores dolores ea sapiente nam recusandae ullam beatae in distinctio, natus perferendis.
+            </p>
+        </div>
+        <div class="container-right">
+            <h1> LOGIN </h1>
+            <form class='form' action="/login" method="POST">
+                <input class="form-i" type="email" name="email" placeholder="email">
+                <input class='form-i' type="password" name="password" placeholder="password">
+
+                <button class="btn btn-success">Submit</button>
+            </form>
+            <li style="color: white;"><a href="/signin" , style="color: white;">Sign Up for New Account</a></li>
+            <br>
+            <li style="color: white;"><a href="/forgot" , style="color: white;">Forgot password</a></li>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</html>

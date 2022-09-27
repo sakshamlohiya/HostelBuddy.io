@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .active {
+            margin-left: 10px;
+        }
+
+        nav {
+            border-bottom: 2px solid black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: rgb(30, 8, 107);
+        }
+
+        .addeventsf {
+            color: white;
+            width: 50vh;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">Hostel LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/hmate">Hostel Buddy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/map">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/achievement">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/gallery">Gallery</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 40px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/profile">My Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/complaint">Complaint</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/logout">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <h1 style="margin: 30px; color: antiquewhite; text-align: center;">Add Events Details</h1>
+
+    <form class="addeventsf" action="/addevents" method="post">
+        <input type="text" class="form-control" placeholder="EventName" name="eventname">
+        <input type="date" class="form-control" placeholder="EventDate" name="eventdate">
+        <input type="time" class="form-control" placeholder="EventTime" name="eventtime">
+        <textarea name="eventdes" class="form-control" placeholder="Eventinfo" cols="40" style="border-radius: 10px;" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+
+        <!-- <div class="mb-3">
+            <label for="eventname" class="form-label">Event Name</label>
+            <input type="text" class="form-control" id="eventname" name="eventname" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="eventdate" class="form-label">Event Date</label>
+            <input type="date" class="form-control" id="eventdate" name="eventdate" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="eventtime" class="form-label">Event Time</label>
+            <input type="time" class="form-control" id="eventtime" name="eventtime" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Event description</label>
+            <textarea name="eventdes" id="eventdes" class="form-control" cols="40" style="border-radius: 10px;" rows="10"></textarea>
+        </div>
+        <button type="submit" id="eventsadd" style="margin: 20px; background-color: #fff; color:rgb(30, 8, 107);"
+            class="btn btn-primary">Submit</button> -->
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</html>
